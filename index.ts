@@ -20,10 +20,10 @@ interface RequestMock {
   readonly method: HttpMethod;
   readonly host: string;
   readonly path: string;
-  readonly body?: User;
-  readonly params?: {
+  readonly params: {
     readonly id?: string;
   };
+  readonly body?: User;
 }
 
 type RequestsMock = ReadonlyArray<RequestMock>;
